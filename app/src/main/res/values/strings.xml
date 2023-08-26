@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+    <string name="code">coding</string>
+    <string name="time">Morning</string>
+    <string name="status_button">Check Status</string>
+</resources>
