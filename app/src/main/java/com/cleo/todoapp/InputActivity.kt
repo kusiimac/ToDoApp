@@ -75,7 +75,7 @@ class InputActivity : AppCompatActivity() , DatePickerDialog.OnDateSetListener, 
 
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
         savedDay = dayOfMonth
-        savedMonth = month
+        savedMonth = month + 1
         savedYear = year
 
         getDateTimeCalender()
@@ -86,7 +86,7 @@ class InputActivity : AppCompatActivity() , DatePickerDialog.OnDateSetListener, 
         savedHour = hourOfDay
         savedMinute = minute
         val dateTime = findViewById<TextView>(R.id.input_date)
-        dateTime.text = " Date: $savedDay - $savedMonth - $savedYear\n Time: $savedHour:$savedMinute"
+        dateTime.text = " Date: $savedDay - $savedMonth - $savedYear\n Time: $savedHour : $savedMinute"
 
     }
 }
