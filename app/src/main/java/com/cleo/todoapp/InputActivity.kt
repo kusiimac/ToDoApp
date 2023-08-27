@@ -57,14 +57,12 @@ class InputActivity : AppCompatActivity() , DatePickerDialog.OnDateSetListener, 
     }
 
     private fun getDateTimeCalender(){
-
         val calendar: Calendar = Calendar.getInstance()
         day = calendar.get(Calendar.DAY_OF_MONTH)
         month = calendar.get(Calendar.MONTH)
         year = calendar.get(Calendar.YEAR)
         hour = calendar.get(Calendar.HOUR)
         minute = calendar.get(Calendar.MINUTE)
-
     }
 
     private fun pickDate(){
