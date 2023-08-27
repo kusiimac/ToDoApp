@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="floating_button_text">Next</string>
+    <string name="add_photo">Choose a Photo</string>
+    <string name="activity_name">Please Enter Your Activity</string>
+    <string name="activity_title">Activity Title</string>
+    <string name="activity_details_title">Activity Details</string>
+    <string name="pick_dade">Select Date and Time</string>
+</resources>

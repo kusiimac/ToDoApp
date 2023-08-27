@@ -3,4 +3,13 @@
     <string name="code">coding</string>
     <string name="time">Morning</string>
     <string name="status_button">Check Status</string>
+    <string name="floating_button_text">Next</string>
+    <string name="add_photo">Choose a Photo</string>
+    <string name="activity_name">Please Enter Your Activity</string>
+    <string name="activity_title">Activity Title</string>
+    <string name="activity_details_title">Activity Details</string>
+    <string name="activity_details">Please Enter Activity Details</string>
+    <string name="activity_date_title">Activity Date and Time</string>
+    <string name="activity_date">Please Select Date and Time</string>
+    <string name="pick_dade">Select Date and Time</string>
 </resources>

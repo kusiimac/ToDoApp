@@ -16,17 +16,32 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val list = ArrayList<ActivityModel>()
-        list.add(ActivityModel(R.drawable.exercise,"Exercising", "Morning", "This activity always begins at 5 O'clock", ActivityStatus.Pending))
-        list.add(ActivityModel(R.drawable.cooking_dinner,"Cooking", "Morning", "Cooking always begins at 8 O'clock", ActivityStatus.Postponed))
-        list.add(ActivityModel(R.drawable.coding,"Coding", "Afternoon", "This activity will begin at 1 O'clock", ActivityStatus.Pending))
-        list.add(ActivityModel(R.drawable.soccer,"Playing soccer", "Evening", "This activity always begins at 3 O'clock", ActivityStatus.Completed))
-        list.add(ActivityModel(R.drawable.cooking,"Cooking dinner", "Evening", "This activity always begins at 7 O'clock", ActivityStatus.Pending))
-        list.add(ActivityModel(R.drawable.coding,"Coding", "Evening", "This activity always begins at 10 O'clock. It is either " +
-                "conducted by the trainer or it can be by the learner as a self study practice session to improve on" +
-                "the skills learned in the previous online sessions.", ActivityStatus.Completed))
+        list.add(ActivityModel(R.drawable.exercise,"Exercising", "Morning", "This activity always " +
+                "begins at 5 O'clock. It began as a spiritual practice but has become popular as a " +
+                "way of promoting physical and mental well-being.", ActivityStatus.Pending))
+        list.add(ActivityModel(R.drawable.cooking_dinner,"Cooking", "Morning", "Cooking always " +
+                "begins at 8 O'clock. You only need 15 tools in your kitchen to make pretty much" +
+                " any breakfast recipe that’ll comes your way, from eggs Benedict to oatmeal and " +
+                "toast.", ActivityStatus.Postponed))
+        list.add(ActivityModel(R.drawable.coding,"Coding", "Afternoon", "This activity will begin at" +
+                " 1 O'clock. Interested in learning how to code, but unsure where to start? This " +
+                "path provides an overview of the main branches of programming: computer science, " +
+                "web development, and data science ", ActivityStatus.Pending))
+        list.add(ActivityModel(R.drawable.soccer,"Coding", "Afternoon", "Football, also called " +
+                "association football or soccer, is a game involving two teams of 11 players who try" +
+                " to maneuver the ball into the other team's goal. The team that scores more" +
+                " goals wins ", ActivityStatus.Pending))
+        list.add(ActivityModel(R.drawable.cooking,"Cooking dinner", "Evening", "This activity always " +
+                "begins at 7 O'clock We've rounded up our 60 best, easy dinner recipes! From" +
+                " grilled steak to braised chickpeas to all the sheet pan dinners, we've got" +
+                " you covered.", ActivityStatus.Pending))
+        list.add(ActivityModel(R.drawable.coding,"Coding", "Evening", "This activity always begins " +
+                "at 10 O'clock. It is either conducted by the trainer or it can be by the learner " +
+                "as a self study practice session to improve on the skills learned in the previous " +
+                "online sessions.", ActivityStatus.Completed))
 
         val activityAdapter = ActivityAdapter(this,list)
-        val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
+        val recyclerView = binding.recyclerView
         recyclerView.adapter = activityAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 
