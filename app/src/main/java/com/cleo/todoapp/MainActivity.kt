@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 " 1 O'clock. Interested in learning how to code, but unsure where to start? This " +
                 "path provides an overview of the main branches of programming: computer science, " +
                 "web development, and data science ", ActivityStatus.Pending))
-        list.add(ActivityModel(R.drawable.soccer,"Coding", "Afternoon", "Football, also called " +
+        list.add(ActivityModel(R.drawable.soccer,"Playing soccer", "Afternoon", "Football, also called " +
                 "soccer, is a game involving two teams of 11 players who try to maneuver the ball" +
                 " into the other team's goal. The team that scores more goals wins ", ActivityStatus.Pending))
         list.add(ActivityModel(R.drawable.cooking,"Cooking dinner", "Evening", "This activity always " +
