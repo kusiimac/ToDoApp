@@ -87,6 +87,5 @@ class InputActivity : AppCompatActivity() , DatePickerDialog.OnDateSetListener, 
         savedMinute = minute
         val dateTime = findViewById<TextView>(R.id.input_date)
         dateTime.text = " Date: $savedDay - $savedMonth - $savedYear\n Time: $savedHour : $savedMinute"
-
     }
 }

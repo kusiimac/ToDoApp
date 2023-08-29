@@ -3,8 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="status_bar_color">#131313</color>
-    <color name="button_color">#7A00A6</color>
+    <color name="button_color">#8C3FFD</color>
     <color name="input_layout_background">#E3E3E3</color>
     <color name="no_color">#00000000</color>
+    <color name="primary_color">#6200EE</color>
+    <color name="primary_color_variant">#3700B3</color>
 
 </resources>
