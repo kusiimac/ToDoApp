@@ -39,12 +39,5 @@ class DetailsActivity : AppCompatActivity() {
             val activityStatus = findViewById<TextView>(R.id.activity_status)
             activityStatus.text = status.toString()
         }
-        val floatButton = binding.floatButton
-
-        floatButton.setOnClickListener {
-            val intent = Intent(this@DetailsActivity, InputActivity::class.java)
-            startActivity(intent)
-        }
-
     }
 }

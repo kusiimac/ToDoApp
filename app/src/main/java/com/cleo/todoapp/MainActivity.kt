@@ -1,5 +1,6 @@
 package com.cleo.todoapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -43,6 +44,14 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = binding.recyclerView
         recyclerView.adapter = activityAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
+
+
+        val floatButton = binding.floatButton
+
+        floatButton.setOnClickListener {
+            val intent = Intent(this@MainActivity, InputActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
